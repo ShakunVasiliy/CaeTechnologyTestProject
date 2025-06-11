@@ -9,7 +9,6 @@ namespace SalesGraph.Infrastructure
         public SaleGraphContext()
             : base()
         {
-            Database.Migrate();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
