@@ -30,6 +30,7 @@ namespace SalesGraph.Infrastructure
             modelBuilder.ApplyConfiguration(new DaySaleConfiguration());
             modelBuilder.ApplyConfiguration(new WeekSaleConfiguration());
             modelBuilder.ApplyConfiguration(new MonthSaleConfiguration());
+            modelBuilder.ApplyConfiguration(new QuarterSaleConfiguration());
         }
 
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
