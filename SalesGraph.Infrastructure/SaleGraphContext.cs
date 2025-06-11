@@ -1,6 +1,7 @@
 ﻿using Common.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using SalesGraph.Infrastructure.Configurations;
 
 namespace SalesGraph.Infrastructure
 {
@@ -20,6 +21,11 @@ namespace SalesGraph.Infrastructure
             var configConnectionString = config.GetConnectionString(InfrastructureConsts.Config.ConnectionString.SaleGraphDb);
 
             optionsBuilder.UseSqlServer(configConnectionString);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new SaleConfiguration());
         }
     }
 }
