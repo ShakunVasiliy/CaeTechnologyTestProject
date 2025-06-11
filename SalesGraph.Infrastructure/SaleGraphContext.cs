@@ -28,6 +28,7 @@ namespace SalesGraph.Infrastructure
         {
             modelBuilder.ApplyConfiguration(new SaleConfiguration());
             modelBuilder.ApplyConfiguration(new DaySaleConfiguration());
+            modelBuilder.ApplyConfiguration(new WeekSaleConfiguration());
         }
 
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
