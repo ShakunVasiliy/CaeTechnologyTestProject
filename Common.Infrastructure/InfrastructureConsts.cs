@@ -11,5 +11,10 @@
                 public const string SaleGraphDb = $"{nameof(SaleGraphDb)}";
             }
         }
+
+        public static class DbTypes
+        {
+            public const string Date = "date";
+        }
     }
 }
