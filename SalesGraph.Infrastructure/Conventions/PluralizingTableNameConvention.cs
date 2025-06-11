@@ -11,10 +11,7 @@ namespace SalesGraph.Infrastructure.Conventions
         {
             foreach (var entityType in modelBuilder.Metadata.GetEntityTypes())
             {
-                if (entityType.GetTableName() is null)
-                {
-                    entityType.SetTableName(WordHelper.Pluralize(entityType.DisplayName()));
-                }
+                entityType.SetTableName(WordHelper.Pluralize(entityType.DisplayName()));
             }
         }
     }

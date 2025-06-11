@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using SalesGraph.Infrastructure.Configurations;
+using SalesGraph.Infrastructure.Conventions;
 
 namespace SalesGraph.Infrastructure
 {
@@ -26,6 +27,11 @@ namespace SalesGraph.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new SaleConfiguration());
+        }
+
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            configurationBuilder.Conventions.Add(_ => new PluralizingTableNameConvention());
         }
     }
 }
