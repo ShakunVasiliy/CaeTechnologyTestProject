@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Common.Infrastructure\Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\SalesGraph.Core.Data\SalesGraph.Core.Data.csproj" />
   </ItemGroup>
 
