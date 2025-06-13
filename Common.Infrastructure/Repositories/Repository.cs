@@ -9,9 +9,5 @@ namespace Common.Infrastructure.Repositories
         protected Repository(DbContext dbContext) : base(dbContext)
         {
         }
-
-        protected Repository(DbSet<T> dbSet) : base(dbSet)
-        {
-        }
     }
 }
