@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesGraph.Core.UnitTests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesGraph.WebApi.IntegrationTests", "SalesGraph.WebApi.IntegrationTests\SalesGraph.WebApi.IntegrationTests.csproj", "{24914C72-13AD-479B-87D7-FAE24D1952E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{7CF1C71C-A889-4E79-9C1E-FAC5D63EB12E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,10 @@ Global
 		{24914C72-13AD-479B-87D7-FAE24D1952E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24914C72-13AD-479B-87D7-FAE24D1952E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24914C72-13AD-479B-87D7-FAE24D1952E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF1C71C-A889-4E79-9C1E-FAC5D63EB12E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF1C71C-A889-4E79-9C1E-FAC5D63EB12E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF1C71C-A889-4E79-9C1E-FAC5D63EB12E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF1C71C-A889-4E79-9C1E-FAC5D63EB12E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,5 +93,6 @@ Global
 		{408D7885-FE96-459D-A802-AC873CFE2192} = {47955E40-3986-4999-985A-4ABE0512A30A}
 		{1CF83D53-1FF7-49E3-9439-640B8F983081} = {905F5179-315E-40AE-B16B-B79F16190130}
 		{24914C72-13AD-479B-87D7-FAE24D1952E0} = {905F5179-315E-40AE-B16B-B79F16190130}
+		{7CF1C71C-A889-4E79-9C1E-FAC5D63EB12E} = {F78F83F7-3BEB-4A68-BE24-9B558AFA9B91}
 	EndGlobalSection
 EndGlobal
