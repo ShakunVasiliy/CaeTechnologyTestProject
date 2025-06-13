@@ -19,6 +19,12 @@ namespace SalesGraph.Infrastructure.Configurations
             builder.Property(x => x.EndDate)
                 .IsRequired()
                 .HasColumnType(InfrastructureConsts.DbTypes.Date);
+
+            builder.HasIndex(x => new
+            {
+                x.StartDate,
+                x.EndDate
+            });
         }
     }
 }

@@ -14,6 +14,8 @@ namespace SalesGraph.Infrastructure.Configurations
                 .HasPrecision(19, 4)
                 .IsRequired()
                 .HasDefaultValue(0);
+
+            builder.HasIndex(x => x.Date);
         }
     }
 }
